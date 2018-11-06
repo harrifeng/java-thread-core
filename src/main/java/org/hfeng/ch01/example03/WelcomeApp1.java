@@ -15,4 +15,10 @@ class WelcomeTask implements Runnable {
     }
 }
 
+// <===================OUTPUT===================>
+// 1.Welcome! I'm main.
+// 2.Welcome! I'm Thread-0.
 
+// <===================OUTPUT===================>
+// 2.Welcome! I'm Thread-0.
+// 1.Welcome! I'm main.

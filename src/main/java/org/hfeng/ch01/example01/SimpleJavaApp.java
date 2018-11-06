@@ -10,3 +10,10 @@ public class SimpleJavaApp {
         }
     }
 }
+
+// <===================OUTPUT===================>
+// Tue Nov 06 09:23:12 UTC 2018
+// Tue Nov 06 09:23:13 UTC 2018
+// Tue Nov 06 09:23:14 UTC 2018
+// Tue Nov 06 09:23:15 UTC 2018
+// ...
