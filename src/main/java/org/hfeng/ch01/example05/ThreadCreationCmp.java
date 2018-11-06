@@ -65,4 +65,12 @@ public class ThreadCreationCmp {
     }
 }
 
-
+// <===================OUTPUT===================>
+// CountingTask:376
+// CountingTask:386
+// CountingThread:100
+// CountingThread:100
+// CountingThread:100
+// CountingTask:399
+// CountingTask:400
+// CountingThread:100
