@@ -12,7 +12,7 @@ public class DemoJoin {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("Main thread is finished");
+        System.out.println("Main Thread is finished");
     }
 }
 
@@ -20,6 +20,10 @@ class DemoThread implements Runnable {
     @Override
     public void run() {
         Tools.randomPause(1000);
-        System.out.println("Demo Thread Done");
+        System.out.println("Demo Thread is finished");
     }
 }
+
+// <===================OUTPUT===================>
+// Demo Thread is finished
+// Main Thread is finished
