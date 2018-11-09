@@ -31,3 +31,8 @@ public class JavaThreadAnywhere {
         }
     }
 }
+
+// <===================OUTPUT===================>
+// The main method was executed by thread: main
+// The doSomething method was executed by thread : main
+// Do something with Java Thread AnyWhere
