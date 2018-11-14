@@ -9,7 +9,7 @@ import java.util.Date;
 public final class RequestIDGenerator implements CircularSeqGenerator {
 
     private final static RequestIDGenerator INSTANCE = new RequestIDGenerator();
-    private final static short SEQ_UPPER_LIMIT = 999;
+    private final static short SEQ_UPPER_LIMIT = 9999;
     private short sequence = -1;
 
     private RequestIDGenerator() {
@@ -28,7 +28,7 @@ public final class RequestIDGenerator implements CircularSeqGenerator {
     public String nextID() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyMMddHHmmss");
         String timestamp = sdf.format(new Date());
-        DecimalFormat df = new DecimalFormat("000");
+        DecimalFormat df = new DecimalFormat("0000");
 
         short sequenceNo = nextSequence();
         return "0049" + timestamp + df.format(sequenceNo);

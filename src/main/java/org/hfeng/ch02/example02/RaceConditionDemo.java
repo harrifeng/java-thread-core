@@ -8,7 +8,7 @@ public class RaceConditionDemo {
         int numOfThreads = args.length > 0 ? Short.valueOf(args[0]) : Runtime.getRuntime().availableProcessors();
         Thread[] workerThreads = new Thread[numOfThreads];
         for (int i = 0; i < numOfThreads; i++) {
-            workerThreads[i] = new WorkerThread(i, 10);
+            workerThreads[i] = new WorkerThread(i, 1000);
         }
         // start once
         for (Thread ct: workerThreads) {
@@ -43,3 +43,10 @@ public class RaceConditionDemo {
         }
     }
 }
+
+// <===================OUTPUT===================>
+// ....
+// worker-0 got requestID: 00491811140750043995
+// worker-0 got requestID: 00491811140750043996
+// worker-0 got requestID: 00491811140750043997
+// worker-0 got requestID: 00491811140750043998 SHOULD END WITH 3999
