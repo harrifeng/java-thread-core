@@ -44,3 +44,9 @@ public class NonAtomicAssignmentDemo implements Runnable {
         }
     }
 }
+
+// <===================OUTPUT===================>
+// Unexpected data: -4294967296(0xffffffff00000000)
+
+// <===================OUTPUT===================>
+// Unexpected data: -4294967296(0xffffffff00000000)
